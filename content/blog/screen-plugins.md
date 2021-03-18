@@ -8,19 +8,19 @@ consumes:
     details: Explains the screen plugin interface properties
 next: /blog/software-engineering-daily-podcast-tinacms
 prev: /blog/designing-an-extensible-styling-system
+last_edited: '2021-03-18T11:35:52.224Z'
 ---
-
 Plugins are a powerful concept. In general plugins are used to extend core functionality of a base system. While many plugin systems are static, TinaCMS is powered by a [dynamic plugin system](https://tinacms.org/blog/dynamic-plugin-system/). In this approach, plugins are added and removed programmatically. This dynamism allows developers to add and remove CMS features based on the context.
 
 If you’ve worked with Tina, you may have already used a few plugins without realizing it. The most common plugin used in `tinacms` is the `FormPlugin` which adds forms for editing content to the [sidebar](https://tinacms.org/docs/concepts/sidebar).
 
-Another plugin worth noting is the [`ContentCreatorPlugin`](/docs/plugins/content-creators). This plugin provides the foundation for creating new data source files.
+Another plugin worth noting is the [`ContentCreatorPlugin`](/docs/plugins/content-creators). This blugin provides the foundation for creating new data source files.
 
 One of the more recent additions has been the [`ScreenPlugin`](/docs/plugins/screens), which is the topic of this blog. Screens allow you to render modal UI and handle various content editing needs. For example, one might use a _Screen Plugin_ to register a form to edit 'global site data'.
 
 ## What's that?
 
-The **`ScreenPlugin` has three main pieces**: a name, an icon, and a React Component.
+The `ScreenPlugin` has three main pieces: a name, an icon, and a React Component.
 
 For example with a `GlobalFormPlugin` (a type of screen plugin), the name and the icon are used to list the screen plugin in the global menu.
 
